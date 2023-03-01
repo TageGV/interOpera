@@ -31,20 +31,20 @@ android {
     flavorDimensions "flavor-type"
 
     productFlavors {
-        buildA {
+        builda {
             dimension "flavor-type"
-            applicationId "com.sotatek.vinhgv.a"
-            resValue "string", "app_name", "InterOpera A"
+            applicationId "com.sotatek.vinhgv.interOpera.builda"
+            resValue "string", "app_name", "InterOperaA"
         }
-        buildB {
+        buildb {
             dimension "flavor-type"
-            applicationId "com.sotatek.vinhgv.b"
-            resValue "string", "app_name", "InterOpera A"
+            applicationId "com.sotatek.vinhgv.interOpera.buildb"
+            resValue "string", "app_name", "InterOperaB"
         }
-        buildC {
+        buildc {
             dimension "flavor-type"
-            applicationId "com.sotatek.vinhgv.c"
-            resValue "string", "app_name", "InterOpera A"
+            applicationId "com.sotatek.vinhgv.interOpera.buildc"
+            resValue "string", "app_name", "InterOperaC"
         }
     }
 
