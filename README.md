@@ -21,7 +21,7 @@ Project Base on Clean Architecture.
 * Using flavor base flag system.
 * GetIt to injection.
 
-## Run Project
+## RunProject.
 For run with build a:
 * flutter run --flavor builda -t lib/run/build_a.dart
 
