@@ -33,14 +33,23 @@ For run with build C:
 if run error please try:
 
 flutter clean
+
 rm -Rf ios/Pods
+
 rm -Rf ios/Podfile.lock
+
 rm -Rf ios/.symlinks
+
 rm -Rf ios/Flutter/Flutter.framework
+
 rm -Rf ios/Flutter/Flutter.podspec
+
 cd ios/
+
 pod deintegrate
+
 flutter pub get
+
 pod install --repo-update
 
 
