@@ -30,6 +30,7 @@ For run with build b:
 
 For run with build C:
 * flutter run --flavor buildc -t lib/run/build_c.dart
+
 if run error please try:
 
 flutter clean
