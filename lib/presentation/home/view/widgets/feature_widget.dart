@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inter_opera/common/colors/app_text.dart';
-import 'package:inter_opera/configuration/flavor/flavor_config.dart';
+import 'package:inter_opera/flavors.dart';
 import 'package:inter_opera/presentation/home/view/widgets/build_a_widget.dart';
 import 'package:inter_opera/presentation/home/view/widgets/build_b_widget.dart';
 import 'package:inter_opera/presentation/home/view/widgets/build_c_widget.dart';
@@ -13,14 +13,14 @@ class FeatureWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget child;
-    switch (Flag.appFlag) {
-      case FlagSystem.buildA:
+    switch (F.appFlavor!) {
+      case Flavor.BUILDA:
         child = const BuildAWidget();
         break;
-      case FlagSystem.buildB:
+      case Flavor.BUILDB:
         child = const BuildBWidget();
         break;
-      case FlagSystem.buildC:
+      case Flavor.BUILDC:
         child = const BuildCWidget();
         break;
     }

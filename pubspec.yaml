@@ -110,30 +110,30 @@ flavorizr:
     flavors:
       buildA:
         app:
-          name: "App A"
+          name: "InterOpera A"
 
         android:
-          applicationId: "com.sotatek.a"
+          applicationId: "com.sotatek.vinhgv.a"
 
         ios:
-          bundleId: "com.sotatek.a"
+          bundleId: "com.sotatek.vinhgv.a"
 
       buildB:
         app:
-          name: "App B"
+          name: "InterOpera A"
 
         android:
-          applicationId: "com.sotatek.b"
+          applicationId: "com.sotatek.vinhgv.b"
 
         ios:
-          bundleId: "com.sotatek.b"
+          bundleId: "com.sotatek.vinhgv.b"
 
       buildC:
         app:
-          name: "App C"
+          name: "InterOpera A"
 
         android:
-          applicationId: "com.sotatek.c"
+          applicationId: "com.sotatek.vinhgv.c"
 
         ios:
-          bundleId: "com.sotatek.c"
+          bundleId: "com.sotatek.vinhgv.c"

@@ -1,14 +1,14 @@
-import 'package:inter_opera/configuration/flavor/flavor_config.dart';
+import 'package:inter_opera/flavors.dart';
 import 'package:inter_opera/theme/theme_color.dart';
 
 class AppTheme {
   static ThemeColor get theme {
-    switch (Flag.appFlag) {
-      case FlagSystem.buildA:
+    switch (F.appFlavor!) {
+      case Flavor.BUILDA:
         return ThemeA();
-      case FlagSystem.buildB:
+      case Flavor.BUILDB:
         return ThemeB();
-      case FlagSystem.buildC:
+      case Flavor.BUILDC:
         return ThemeC();
     }
   }

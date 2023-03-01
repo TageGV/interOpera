@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:inter_opera/configuration/flavor/flavor_config.dart';
 import 'package:inter_opera/di/injector.dart';
+import 'package:inter_opera/flavors.dart';
 import 'package:inter_opera/presentation/home/bloc/home_bloc.dart';
 import 'package:inter_opera/presentation/home/view/widgets/common_widget.dart';
 import 'package:inter_opera/presentation/home/view/widgets/feature_widget.dart';
@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppTheme.theme.backgroundColor,
         appBar: AppBar(
-          title: Text(Flag.appTitle),
+          title: Text(F.title),
         ),
         body: SafeArea(
           child: Center(
