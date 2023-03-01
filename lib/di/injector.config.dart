@@ -29,13 +29,9 @@ import 'package:inter_opera/domain/use_cases/build_b/get_emoji_uc.dart' as _i15;
 import 'package:inter_opera/domain/use_cases/build_c/get_definition_uc.dart'
     as _i16;
 import 'package:inter_opera/presentation/home/bloc/home_bloc.dart' as _i18;
-import 'package:shared_preferences/shared_preferences.dart' as _i5;
+import 'package:shared_preferences/shared_preferences.dart'
+    as _i5; // ignore_for_file: unnecessary_lambdas
 
-const String _buildB = 'buildB';
-const String _buildA = 'buildA';
-const String _buildC = 'buildC';
-
-// ignore_for_file: unnecessary_lambdas
 // ignore_for_file: lines_longer_than_80_chars
 extension GetItInjectableX on _i1.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -61,17 +57,14 @@ extension GetItInjectableX on _i1.GetIt {
     gh.factory<String>(
       () => buildBConstant.emojiUrl,
       instanceName: 'emoji_url',
-      registerFor: {_buildB},
     );
     gh.factory<String>(
       () => buildAConstant.userUrl,
       instanceName: 'user_url',
-      registerFor: {_buildA},
     );
     gh.factory<String>(
       () => buildCConstant.dictionaryUrl,
       instanceName: 'dictionary_url',
-      registerFor: {_buildC},
     );
     gh.factory<_i6.UserApi>(() => _i6.UserApi(
           gh<_i3.Dio>(),

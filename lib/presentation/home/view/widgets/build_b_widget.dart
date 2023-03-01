@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:inter_opera/common/utils/emoji_convert.dart';
 import 'package:inter_opera/presentation/home/bloc/home_bloc.dart';
 import 'package:inter_opera/presentation/home/view/widgets/loading_widget.dart';
 
@@ -19,7 +20,7 @@ class BuildBWidget extends StatelessWidget {
                     .map((e) => Flexible(
                   child: Padding(
                     padding: const EdgeInsets.only(right: 8.0),
-                    child: Text(e),
+                    child: Text( EmojiHelper.toEmoji(e), style: const TextStyle(fontSize: 64),),
                   ),
                 ))
                     .toList(),
