@@ -24,10 +24,10 @@ Project Base on Clean Architecture.
 For run with build a:
 * flutter run -t lib/main_a.dart
 
-For run with build b.
+For run with build b:
 * flutter run -t lib/main_b.dart
 
-For run with build C
+For run with build C:
 * flutter run -t lib/main_c.dart
 
 

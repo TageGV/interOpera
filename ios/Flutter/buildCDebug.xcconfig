@@ -1,6 +1,0 @@
-#include "Generated.xcconfig"
-
-FLUTTER_TARGET=lib/main_buildC.dart
-ASSET_PREFIX=buildC
-BUNDLE_NAME=InterOpera A
-BUNDLE_DISPLAY_NAME=InterOpera A

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:inter_opera/configuration/flavor_config.dart';
 import 'package:inter_opera/di/injector.dart';
 import 'package:inter_opera/presentation/home/view/home_screen.dart';
 import 'package:inter_opera/route/route.dart';
 
-import 'flavors.dart';
-
 void run() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await configureDependencies(F.env);
+  await configureDependencies(Flag.env);
   runApp(const App());
+
 }
 
 class App extends StatelessWidget {
@@ -17,7 +17,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: F.title,
+      title: Flag.appTitle,
       routes: R.routes,
       initialRoute: HomeScreen.name,
     );

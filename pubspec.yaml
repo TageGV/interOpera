@@ -106,34 +106,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-flavorizr:
-    flavors:
-      buildA:
-        app:
-          name: "InterOpera A"
-
-        android:
-          applicationId: "com.sotatek.vinhgv.a"
-
-        ios:
-          bundleId: "com.sotatek.vinhgv.a"
-
-      buildB:
-        app:
-          name: "InterOpera A"
-
-        android:
-          applicationId: "com.sotatek.vinhgv.b"
-
-        ios:
-          bundleId: "com.sotatek.vinhgv.b"
-
-      buildC:
-        app:
-          name: "InterOpera A"
-
-        android:
-          applicationId: "com.sotatek.vinhgv.c"
-
-        ios:
-          bundleId: "com.sotatek.vinhgv.c"

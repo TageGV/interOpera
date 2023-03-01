@@ -1,6 +1,6 @@
-import 'package:inter_opera/flavors.dart';
 
 
+import 'package:inter_opera/configuration/flavor_config.dart';
 
 class AppText {
   static final AppText _appText = AppText._singleton();
@@ -10,14 +10,13 @@ class AppText {
   AppText._singleton();
 
   String get commonText {
-    switch (F.appFlavor) {
-      case Flavor.BUILDA:
+    switch (Flag.appFlag) {
+      case FlagSystem.buildA:
         return "Welcome Build A";
-      case Flavor.BUILDB:
+      case FlagSystem.buildB:
         return "Welcome Build B";
-      case Flavor.BUILDC:
+      case FlagSystem.buildC:
         return "Welcome Build C";
-      default: return "";
     }
   }
 
@@ -26,6 +25,6 @@ class AppText {
   }
 
   String get featureTitle {
-    return "Feature for ${F.appFlavor!.name}";
+    return "Feature for ${Flag.appFlag.name}";
   }
 }
