@@ -4,14 +4,30 @@ Home Assignment Inter Opera
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # interOpera
+
+## Table of Contents
+* [Introduce](#introduce)
+* [Run Project](#runproject)
+
+## Introduce.
+Project Base on Clean Architecture.
+    Project structure:
+        - Data.
+        - Domain.
+        - Presentation.
+        
+* Using flavor base flag system.
+
+## Run Project
+for run with build a
+flutter run -t lib/main_a.dart
+for run with build b
+flutter run -t lib/main_b.dart
+for run with build C
+flutter run -t lib/main_a.dart
+
+
+
+

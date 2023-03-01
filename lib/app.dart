@@ -1,10 +1,15 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:inter_opera/di/injector.dart';
 import 'package:inter_opera/presentation/home/view/home_screen.dart';
 import 'package:inter_opera/route/route.dart';
 
 import 'flavors.dart';
-import 'pages/my_home_page.dart';
+
+void run() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies(F.env);
+  runApp(const App());
+}
 
 class App extends StatelessWidget {
   const App({super.key});
